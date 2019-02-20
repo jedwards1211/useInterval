@@ -10,7 +10,7 @@ function useInterval(cb, interval = 1000) {
     return () => {
       clearInterval(id)
     }
-  }, [])
+  }, [cb, interval])
 }
 
 module.exports = useInterval
